@@ -72,12 +72,12 @@ public final class Utilities {
      *
      */
     public static <X> X getRandomElement(final Collection<X> coll) {
-    	int n = new Random().nextInt(coll.size());
-    		for (X c : coll) {
-    			if (n==0) {
-    				return c;
+    	int a = new Random().nextInt(coll.size());
+    		for (X b : coll) {
+    			if (a==0) {
+    				return b;
     			}
-    			n--;
+    			a--;
     		}
     	return null;
     }
