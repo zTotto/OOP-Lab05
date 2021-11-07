@@ -10,9 +10,8 @@ public class ComparableProduct extends ProductImpl implements Comparable<Product
 		super(name, quantity);
 	}
 
-	@Override
 	public int compareTo(Product o) {
-		return getName().compareTo(o.getName());
+		return this.getName().compareTo(o.getName());
 	}
 	
 }
